@@ -1,0 +1,560 @@
+/* Google Fonts CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    /*background: #3e8da8; */
+    background-color: black;
+    box-shadow: 0 1px 2px rgb(0, 0, 0.2);
+}
+
+nav .navbar {
+    height: 100%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 450px;
+}
+
+nav .navbar .logo a {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+ 
+}
+
+nav .navbar .nav-links {
+    height: 100%;
+    line-height: 70px;
+    
+}
+/*
+.nav-links .links li:hover {
+    box-shadow: 0 0 5px #33ffff,
+                 0 0 5px #66ffff;
+    }
+
+    */
+nav .navbar .nav-links .links {
+    display: flex;
+}
+
+nav .navbar .nav-links .links li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0 14px;
+}
+
+nav .navbar .nav-links .links li a {
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+nav .navbar .nav-links .links li a:hover {  /* a Hover Color */
+    color:#bb0000;
+}
+
+nav .navbar .nav-links .links li .arrow {
+
+    height: 100%;
+    width: 22px;
+    text-align: center;
+    color: #fff;
+    line-height: 70px;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-links .links li:hover .htmlcss-arrow,
+.navbar .nav-links .links li:hover .js-arrow {
+    transform: rotate(180deg);
+}
+
+
+.navbar .nav-links .links .sub-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    /*background: #3e8da8; */
+    background: black;
+    line-height: 40px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 1px 2px rgb(0, 0, 0.2);
+    display: none;
+    z-index: 999;
+}
+
+.navbar .nav-links .links .sub-menu li {
+    padding: 0 22px;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+}
+
+.navbar .nav-links .links .sub-menu li a {
+    font-size: 15px;
+    font: 500;
+}
+.navbar .nav-links .links li .sub-menu li .more-arrow {
+    line-height: 40px;
+}
+.navbar .nav-links .links li:hover .htmlCss-sub-menu,
+.navbar .nav-links .links li:hover .js-sub-menu {
+    display: block;
+}
+
+.navbar .nav-links .links .more:hover .more-sub-menu {
+    display: block;
+}
+
+.navbar .nav-links .links .more .more-sub-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-radius: 0 4px 4px 4px;
+    display: none;
+}
+
+.navbar .bx-menu,
+    .nav-links .sidebar-logo .logo_name,
+    .nav-links .sidebar-logo .bx-x{
+       display: none;
+    }
+
+    @media (max-width:954px) {
+        nav .navbar {
+            max-width: 100%;
+            padding: 0 25px;
+        }
+      
+        nav .navbar .logo a {
+      
+            font-size: 26px;
+      
+        }
+        nav .navbar .nav-links .links li {
+            padding: 0 10px;
+        }
+        nav .navbar .nav-links .links li a {
+            font-size: 15px;
+        }
+      }
+      @media (max-width:800px) {
+        nav .navbar .nav-links{
+            display: block;
+            position: fixed;
+      
+            top: 0;
+            left: -100%;
+            max-width: 270px;
+            width: 100%;
+      
+            background: gray;
+            padding: 20px;
+            line-height: 40px;
+            transition: all 0.5s ease;
+        }
+        nav .navbar .nav-links .sidebar-logo{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+        .navbar .bx-menu,
+        .nav-links .sidebar-logo .logo_name,
+        .nav-links .sidebar-logo .bx-x{
+            color:#fff;
+            font-size: 25px;
+            font-weight: 500;
+        }
+      
+        .navbar .bx-menu,
+        .nav-links .sidebar-logo .logo_name,
+        .nav-links .sidebar-logo .bx-x{
+            display: block;
+        }
+        nav .navbar .nav-links .links{
+          display: block;
+          margin-top: 20px;
+        }
+
+        nav .navbar .nav-links .links li {
+            display: block;
+         
+        }
+        .navbar .nav-links .links .sub-menu {
+            display: none;
+            position: relative;
+            top: 0;
+            left: 0;
+            box-shadow: none;
+        }
+        .navbar .nav-links .links .sub-menu li{
+               border-bottom: none;
+        }
+
+        .navbar .nav-links .links li:hover .htmlCss-sub-menu,
+        .navbar .nav-links .links li:hover .js-sub-menu {
+        display: none;
+       }
+       nav .navbar .nav-links .links li .arrow {
+        line-height: 40px;
+       }
+
+       .navbar .nav-links .links li:hover .htmlcss-arrow,
+        .navbar .nav-links .links li:hover .js-arrow {
+       transform: rotate(0deg);
+    }
+     .navbar .nav-links.show1 .links .sub-menu.htmlCss-sub-menu{
+        display: block;
+        background-color: gray;
+     
+     }
+
+     .navbar .nav-links.show2 .links .more .more-sub-menu{
+        display: block;
+        background-color: gray;
+
+     }
+
+     .navbar .nav-links.show3 .links .sub-menu.js-sub-menu{
+        display: block;
+        background-color: gray;
+
+     }
+
+     .navbar .nav-links.show1 .links  .htmlcss-arrow,
+.navbar .nav-links.show2 .links li .js-arrow {
+    transform: rotate(180deg);
+}
+
+
+    }      
+      
+/*  ============================================================
+
+Header CSS End
+======================================================*/
+
+
+/******************************************
+Home Image Slider
+
+*******************************************/
+
+* {
+    box-sizing: border-box;
+
+}
+
+.image-slideshow {
+    max-width: 50px;
+    position: relative;
+    margin: auto;
+}
+
+img {
+    width: 100%
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 10s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1
+    }
+
+    to {
+        opacity: .3
+    }
+}
+
+
+/******************************************
+Custom CSS and A Hover Decoration
+
+*******************************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+a {  /* For a tag ---*/
+    
+    text-decoration: none !important;
+    color: white;
+   
+}
+
+ a:hover {  /* a hover background color when mouse is over ------ */
+    
+   /* background-color:#55ACEE;
+   text-transform: uppercase; */
+   text-decoration-line: underline;
+    color: #ADD8E6;
+    /* Program text color */
+    /*font-size: large;  */
+    min-height: fit-content;
+
+}
+
+/******************************************
+About Mission Vission 
+*******************************************/
+
+.about_center {
+    margin: auto;
+    width: 80%;
+    border: 8px;
+    padding: 2px;
+}
+
+
+/****************************************************************
+
+About Section
+
+********************************************************************/
+/* Justify contents of paragraph 
+.about {
+    position: relative;  
+}
+----*/
+
+.about span {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--primary);
+    font-size: 17px;
+}
+
+.about h2 {
+
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.about p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+
+/******************************************
+    Heading Text Display (eg. Our Vision
+
+*******************************************/
+
+h1 {
+    /*  position: relative; */
+    font-size: 3em;
+   text-transform: uppercase; 
+    
+
+    font-family: sans-serif;
+    display: table;
+    margin: 10px auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    cursor:crosshair;
+    transition: .6s;
+   
+}
+
+h1:before {
+    content: attr(data-text);
+    transition: .6s;
+    color: #125688;
+    font-weight:bolder;
+    
+    
+    
+}
+
+
+
+/******************************************
+HOAS Program  and  hover link
+
+*******************************************/
+
+.div-1 {
+    background-color: #EBEBEB;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.div-2 {
+    background-color: #0f2862;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.div-3 {
+    background-color: #0f2862;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.div-4 {
+    background-color: rgb(163, 180, 187);
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+.div-5 {
+    background-color: #0f2862;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ddd;
+}
+
+.div-6{
+    background-color: #EBEBEB;
+    margin-bottom: 20px;
+    text-align: center;
+    color:#040f28;
+}
+
+.div-7{
+    background: #125688;
+    color: white;
+}
+
+.div-8{
+    background-color:lightblue;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #125688;
+    font-weight:bolder;
+}
+
+.div-8{
+    background-color:lightblue;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #125688;
+    font-weight:bolder;
+}
+
+.circle-icon {
+    /* For Program Lists */
+    background: #1e7b37;
+    color: #c0ffc0;
+    padding: 30px;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-bottom: 21px;
+}
+
+
+.getinvolve {
+    background-color: #EBEBEB;
+    margin-bottom: 30px;
+    text-align: center;
+    color:black;
+
+}
+
+
+/******************************************
+Get Invilved Button Header
+
+*******************************************/
+.btnfooter {
+    background-color: #2980b9;
+    color: white;
+
+   
+    font-size: 16px;
+    border:#040f28;
+    align-items: center;
+
+}
+
+
+/******************************************
+ Font Awsome for header ===  Social media
+
+*******************************************/
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .new{
+    background-color:azure;
+    color: black;
+    font-size: 24px;
+    text-align: justify;     /* To justify content*/
+    text-justify: inter-word; /* To justify content*/
+  
+  }
+
+

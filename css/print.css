@@ -1,0 +1,11 @@
+
+            
+            h6 {
+                color:green;
+            }
+            @media print {
+               .noprint {
+                  visibility: hidden;
+               }
+            }
+      
